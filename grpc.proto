@@ -1,0 +1,17 @@
+syntax = "proto3"; //protobuf3协议
+package inf;
+
+//响应
+message Result{
+int32 code = 1;
+string msg = 2;
+string data = 3;
+}
+
+service Data{
+	rpc GetUser() returns(Result);
+}
+
+
+
+
